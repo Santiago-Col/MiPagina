@@ -1,0 +1,257 @@
+:root {
+    --fuente: 'Barlow Condensed', sans-serif;
+    --texto: #FFFFFF;
+    --color1: #000000;
+    --color2: #434343;
+    --color3: #8D8D8D;
+    --color4: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fuente);
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--color2);
+    border-radius: 5px;
+}
+
+/* -------------------------------- SECCION INICIO --------------------------------*/
+.inicio {
+    align-items: flex-start;
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 27px 0px;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 30;
+    align-items: center;
+    background-color: var(--color4);
+    border-radius: 50px;
+    display: flex;
+    gap: 44px;
+    height: 62px;
+    justify-content: flex-end;
+    min-width: 633px;
+    padding: 0 50px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.navlink {
+    cursor: pointer;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 24px;
+    text-align: center;
+    width: 78px;
+}
+
+.logo {
+    cursor: pointer;
+    height: 44px;
+    object-fit: cover;
+    width: 44px;
+}
+
+/* -------------------------------- SECCION CUADRICULA --------------------------------*/
+.box-animacion {
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 60px 50px;
+}
+
+.contenedor {
+    display: flex;
+    margin-bottom: 28px;
+    width: 100%;
+    max-width: 1053px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    color: var(--texto);
+    text-align: center;
+    margin-top: 45px;
+    font-size: 96px;
+    font-family: var(--fuente);
+}
+
+.box-1 {
+    align-self: stretch;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+    display: flex;
+}
+
+.box-esfera {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 59%;
+    margin-left: 0px;
+}
+
+.esfera {
+    border-radius: 7%;
+    background-color: var(--color4);
+    display: flex;
+    width: 854px;
+    max-width: 100%;
+    height: 480px;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.esfera img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.esfera-2 {
+    border-radius: 7%;
+    background-color: var(--color4);
+    display: flex;
+    width: 854px;
+    max-width: 100%;
+    height: 480px;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.esfera-2 img {
+    width: 200%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-informacion {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 41%;
+    margin-left: 20px;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.nombre {
+    color: var(--texto);
+    text-align: left;
+    white-space: nowrap;
+    font-size: 64px;
+    font-family: var(--fuente);
+}
+
+.boton {
+    border-radius: 20px;
+    background-color: var(--color4);
+    margin-top: 15px;
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 10px 0px;
+    max-width: 70%;
+    font-size: 20px;
+    font-family: var(--fuente);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--color2);
+    color: var(--color4);
+}
+
+.box-2 {
+    align-self: stretch;
+    padding: 0 2px;
+    gap: 20px;
+    display: flex;
+}
+
+.box-informacion-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 41%;
+    margin-left: 20px;
+}
+
+.informacion-2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.boton2 {
+    color: var(--color1);
+    border-radius: 20px;
+    background-color: var(--color4);
+    align-self: end;
+    margin-top: 15px;
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 10px 0px;
+    margin-left: 16%;
+    max-width: 70%;
+    font-size: 20px;
+    font-family: var(--fuente);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.boton2:hover {
+    background-color: var(--color2);
+    color: var(--color4);
+}

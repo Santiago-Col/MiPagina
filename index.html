@@ -1,0 +1,152 @@
+<html lang="es">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400;500&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/LOGO.png">
+        <title>PORTAFOLIO</title>
+    </head>
+
+    <body>
+        <!-- SECCION INICIO -->
+        <div class="inicio">
+            <div class="navbar">
+                <a href="#inicio" class="fondo-inicio">
+                    <div class="navlink">Inicio</div>
+                </a>
+                <a href="#sobremi" class="fondo-sobremi">
+                    <div class="navlink">Sobre mí</div>
+                </a>
+                <a href="#inicio" class="fondo-logo"><img src="img/LOGO2.png" alt="logo" class="logo"></a>
+                <a href="#portfolio" class="fondo-trabajos">
+                    <div class="navlink">Trabajos</div>
+                </a>
+                <a href="#contacto" class="fondo-contacto">
+                    <div class="navlink">Contacto</div>
+                </a>
+            </div>
+            <div id="inicio" class="texto-inicio">
+                <div class="texto">
+                    <span class="span1">Hola...<br /></span>
+                    <span class="span2">SOY </span><span class="span3">SANTIAGO<br /></span>
+                    <span class="span4">Ingeniero en Multimedia</span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCION SOBRE MI -->
+        <div id="sobremi" class="sobremi">
+            <div class="box-sobremi">
+                <div class="foto"></div>
+                <div class="contenido">
+                    <div class="sobre-m">SOBRE MÍ</div>
+                    <p class="parrafo valid">
+                        Soy un estudiante de la carrera de Ingeniería en Multimedia en la Universidad Militar Nueva Granada.
+                        Poseo destrezas e interés en el ámbito del modelado 3D, desarrollo web y producción multimedia.
+                        Además de mis capacidades técnicas, he demostrado que tengo un sólido sentido de liderazgo y
+                        responsabilidad en todas mis tareas, ya sean personales o académicas.
+                    </p>
+                    <a href="doc/Santiago Colmenares Celis - CV.pdf" download>
+                        <div class="boton">
+                            <div class="hoja-de-vida">
+                                Hoja de vida <i class="fa-solid fa-download"></i>                            
+                            </div>
+                        </div>
+                    </a>
+                    <div class="sub-contenedor">
+                        <div class="contenido-redes">
+                            <a href="https://github.com/Santiago-Col" class="link" target="_blank">
+                                <div class="redes-sociales">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/santiagocolmenares" class="link" target="_blank">
+                                <div class="redes-sociales">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/colme_santiago" class="link" target="_blank">
+                                <div class="redes-sociales">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCION PORTFOLIO -->
+        <div id="portfolio" class="portfolio">
+            <div class="contenido-portfolio">
+                <div class="mis-trabj">MIS TRABAJOS</div>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <a href="animacion.html" class="link">
+                            <img src="img/p6.jpg">
+                            <div class="overlay">
+                                <h3>Animación 3D</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proyecto">
+                        <a href="modelado.html" class="link">
+                            <img src="img/p4.jpg">
+                            <div class="overlay">
+                                <h3>Modelado 3D</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proyecto">
+                        <a href="render.html" class="link">
+                            <img src="img/p2.jpg">
+                            <div class="overlay">
+                                <h3>Render</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proyecto">
+                        <a href="design.html" class="link">
+                            <img src="img/p3.jpg">
+                            <div class="overlay">
+                                <h3>Design</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCION CONTACTO -->
+        <div id="contacto" class="contacto">
+            <div class="contenido-contacto">
+                <div class="formulario">
+                    <form class="box-info" action="https://formsubmit.co/santiagocol0999@gmail.com" method="POST">
+                        <div class="titulo">Formulario de contacto</div>
+                        <input class="texto-box" type="text" placeholder="Nombre" name="Nombre">
+                        <input class="texto-box" type="text" placeholder="Asunto" name="Asunto">
+                        <input class="texto-box" type="text" placeholder="Dirección de correo" name="Correo">
+                        <textarea class="texto-box" cols="20" rows="8" placeholder="Mensaje" name="Mensaje"></textarea>
+                        <button class="texto-box" type="submit">
+                            Enviar Mensaje
+                        </button>
+                        <input type="hidden" name="_next" value="https://santiagocolmenares.000webhostapp.com/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+                <div class="informacion">
+                    <span class="box-informacion">
+                        <div class="titulo-contactame">CONTÁCTAME</div>
+                        <div class="contenido-contactame">
+                            Por favor llena el formulario y me pondré en contacto lo más pronto posible.
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

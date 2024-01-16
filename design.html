@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styleDesign.css">
+    <link rel="icon" href="img/LOGO.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DISEÑO</title>
+</head>
+
+<body>
+    <!-- SECCION INICIO -->
+    <div class="inicio">
+        <div class="navbar">
+            <a href="index.html" class="fondo-inicio">
+                <div class="navlink">Inicio</div>
+            </a>
+            <a href="animacion.html" class="fondo-sobremi">
+                <div class="navlink">Animación 3D</div>
+            </a>
+            <a href="#diseño" class="fondo-logo"><img src="img/LOGO2.png" alt="logo" class="logo"></a>
+            <a href="render.html" class="fondo-trabajos">
+                <div class="navlink">Render</div>
+            </a>
+            <a href="design.html" class="fondo-contacto">
+                <div class="navlink">Diseño</div>
+            </a>
+        </div>
+    </div>   
+
+    <div id="diseño" class="container">
+        <div class="titulo">DISEÑO</div>
+
+        <div class="image-container">
+            <div class="box">
+                <img src="img/Interstellar.jpg" alt="Interstellar">
+            </div>
+            <div class="box">
+                <img src="img/jack.jpg" alt="Samurai">
+            </div>
+            <div class="box">
+                <img src="img/johnny2.jpg" alt="Jhonny">
+            </div>
+            <div class="box">
+                <img src="img/LOGO_Color.jpg" alt="Logo">
+            </div>
+            <div class="box">
+                <img src="img/Lol.png" alt="Lol">
+            </div>
+            <div class="box">
+                <video src="vid/DemoReel.mp4" controls></video>
+            </div>
+        </div>
+    
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="img/Lol.png">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(Image => {
+            Image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = Image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
