@@ -113,10 +113,15 @@ span{
     padding: 251px 126px;
 }
 .foto{
-    background-color: var(--color4);
-    border-radius: 50px;
     height: 519px;
     width: 422px;
+}
+.foto img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 .contenido{
     align-items: flex-start;
