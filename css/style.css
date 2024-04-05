@@ -116,12 +116,11 @@ span{
     height: 519px;
     width: 422px;
 }
-.foto img{
-    border-radius: 30px;
+.box-sobremi .foto img{
+    border-radius: 35px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor: pointer;
 }
 .contenido{
     align-items: flex-start;
